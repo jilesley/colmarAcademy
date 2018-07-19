@@ -5,6 +5,12 @@ html {
   font-size: 16px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mobile {
   display: none;
 }
@@ -22,23 +28,23 @@ video {
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 h3 {
   font-size: 1.25rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 p {
   font-size: 1rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 strong {
@@ -64,9 +70,13 @@ strong {
   align-items: center;
 }
 
+.detail h2 {
+  padding: 0;
+}
+
 .detail a {
   display: block;
-  margin: 1rem 0;
+  padding-top: 1rem;
 }
 
 .img-holder {
@@ -77,7 +87,7 @@ strong {
 
 #container {
   background-color: #EAEBEC;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 #container .content:nth-child(odd) {
@@ -89,15 +99,21 @@ strong {
 
 /* ~~~~~~~~~~ Header Styling ~~~~~~~~~~ */
 
+header, header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 header {
+  max-width: 1600px;
+  width: 100%;
   height: 64px;
-  padding: 0 24px;
   justify-content: space-between;
 }
 
-header, header div {
-  display: flex;
-  align-items: center;
+#logo, nav {
+  padding: 0 24px;
 }
 
 #logo {
@@ -125,7 +141,7 @@ nav a {
   max-width: 450px;
 }
 
-#intro h1 {
+#intro h1, #intro h2 {
   padding: 1rem 0;
 }
 
@@ -139,6 +155,25 @@ button {
   font-size: 1.5rem;
 }
 
+/* ~~~~~~~~~~ Details Styling ~~~~~~~~~~ */
+
+#details {
+  padding-top: 0;
+}
+
+#details .main {
+  padding-top: 32px;
+}
+
+#details .sub {
+  padding-top: 16px;
+}
+
+#details strong {
+  display: block;
+  padding-top: 1rem;
+}
+
 /* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
 
 #start h1 {
@@ -150,13 +185,17 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 32px 72px;
 }
 
 .course {
   background-color: white;
   max-width: 32%;
   margin-bottom: 32px;
+}
+
+.course div {
+  padding: 0 1rem 1rem 1rem;
 }
 
 /* ~~~~~~~~~~ Exhibit Styling ~~~~~~~~~~ */
@@ -168,8 +207,19 @@ button {
 /* ~~~~~~~~~~ Footer Styling ~~~~~~~~~~ */
 
 footer {
+  max-width: 1600px;
+  width: 100%;
   height: 64px;
-  margin: 16px 24px;
+  margin: 16px 0;
   justify-content: space-between;
   display: flex;
+}
+
+footer span, footer div {
+  padding: 0 24px;
+}
+
+footer div span {
+  padding: 0;
+  padding-left: .5rem;
 }
