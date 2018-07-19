@@ -1,0 +1,132 @@
+/* ~~~~~~~~~~ General Styling ~~~~~~~~~~ */
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+p {
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* ~~~~~~~~~~ Main Content Styling ~~~~~~~~~~ */
+
+.split {
+  display: flex;
+  padding: 32px 24px;
+}
+
+.main {
+  width: 60%;
+  margin-right: 24px;
+}
+
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detail a {
+  display: block;
+  margin: 1rem 0;
+}
+
+.img-holder {
+  width: 35%;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+#container {
+  background-color: #F5F5F5;
+}
+
+#container .content:nth-child(odd) {
+  background-color: #D8D8D8;
+}
+
+/* ~~~~~~~~~~ Specific content Styling ~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~ Header Styling ~~~~~~~~~~ */
+
+header {
+  height: 64px;
+  padding: 0 24px;
+  justify-content: space-between;
+}
+
+header, header div {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 75%;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+#logo img {
+  height: 100%;
+  width: auto;
+}
+
+nav a {
+  margin-left: 16px;
+  font-size: 1.25rem;
+}
+
+/* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 72px;
+}
+
+.course {
+  max-width: 32%;
+  margin-bottom: 32px;
+}
+
+/* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
