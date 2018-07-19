@@ -79,7 +79,7 @@ strong {
 }
 
 #container .content:nth-child(odd) {
-  background-color: #D8D8D8;
+  background-color: red/*#D8D8D8*/;
 }
 
 /* ~~~~~~~~~~ Specific content Styling ~~~~~~~~~~ */
