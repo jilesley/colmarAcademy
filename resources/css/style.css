@@ -77,6 +77,7 @@ strong {
 
 #container {
   background-color: #EAEBEC;
+  max-width: 1200px;
 }
 
 #container .content:nth-child(odd) {
