@@ -20,24 +20,25 @@ video {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin: 1rem 0;
+  padding: 2rem 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+  font-size: 1.25rem;
+  padding: 1rem 0;
 }
 
 p {
-
+  font-size: 1rem;
+  padding: 1rem 0;
 }
 
 strong {
@@ -54,8 +55,8 @@ strong {
 .main {
   width: 60%;
   margin-right: 24px;
+  flex-shrink: 0
 }
-
 
 .detail {
   display: flex;
@@ -75,11 +76,11 @@ strong {
 }
 
 #container {
-  background-color: #F5F5F5;
+  background-color: #EAEBEC;
 }
 
 #container .content:nth-child(odd) {
-  background-color: red/*#D8D8D8*/;
+  background-color: #D8D8D8;
 }
 
 /* ~~~~~~~~~~ Specific content Styling ~~~~~~~~~~ */
@@ -114,7 +115,34 @@ nav a {
   font-size: 1.25rem;
 }
 
+/* ~~~~~~~~~~ Intro Styling ~~~~~~~~~~ */
+
+#intro .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+}
+
+#intro h1 {
+  padding: 1rem 0;
+}
+
+button {
+  color: white;
+  background-color: #4A4A4A;
+  border: none;
+  width: 100%;
+  padding: 8px 0;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
 /* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
+
+#start h1 {
+  text-align: center;
+}
 
 .courses {
   display: flex;
@@ -125,8 +153,22 @@ nav a {
 }
 
 .course {
+  background-color: white;
   max-width: 32%;
   margin-bottom: 32px;
 }
 
-/* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
+/* ~~~~~~~~~~ Exhibit Styling ~~~~~~~~~~ */
+
+#exhibit h1 {
+  text-align: center;
+}
+
+/* ~~~~~~~~~~ Footer Styling ~~~~~~~~~~ */
+
+footer {
+  height: 64px;
+  margin: 16px 24px;
+  justify-content: space-between;
+  display: flex;
+}
