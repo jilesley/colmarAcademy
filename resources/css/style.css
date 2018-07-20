@@ -1,8 +1,9 @@
 /* ~~~~~~~~~~ General Styling ~~~~~~~~~~ */
 
 html {
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #4A4A4A;
 }
 
 body {
@@ -38,17 +39,57 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 1rem;
   padding-top: 1rem;
+  font-weight: 300;
+}
+
+a {
+  color: #4A4A4A;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 strong {
   font-weight: bold;
+}
+
+button {
+  color: white;
+  background-color: #4A4A4A;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 8px 0;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  transition: padding 0.5s;
+}
+
+button span::after {
+  opacity: 0;
+  content: " \00bb";
+  transition: opacity 0.5s;
+}
+
+button:hover {
+  padding-right: 1rem;
+}
+
+button:hover span::after {
+  opacity: 1;
+}
+
+button:active, button:active span::after {
+  color: lightGray;
 }
 
 /* ~~~~~~~~~~ Main Content Styling ~~~~~~~~~~ */
@@ -75,6 +116,7 @@ strong {
 }
 
 .detail a {
+  color: DodgerBlue;
   display: block;
   padding-top: 1rem;
 }
@@ -145,16 +187,6 @@ nav a {
   padding: 1rem 0;
 }
 
-button {
-  color: white;
-  background-color: #4A4A4A;
-  border: none;
-  width: 100%;
-  padding: 8px 0;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-
 /* ~~~~~~~~~~ Details Styling ~~~~~~~~~~ */
 
 #details {
@@ -172,6 +204,10 @@ button {
 #details strong {
   display: block;
   padding-top: 1rem;
+}
+
+#details .detail:last-child {
+  background-color: #D8D8D8;
 }
 
 /* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
@@ -202,6 +238,10 @@ button {
 
 #exhibit h1 {
   text-align: center;
+}
+
+#exhibit .detail:first-child {
+  background-color: #D8D8D8;
 }
 
 /* ~~~~~~~~~~ Footer Styling ~~~~~~~~~~ */
