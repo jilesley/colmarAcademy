@@ -1,0 +1,147 @@
+@media only screen and (max-width: 840px) {
+  html {
+    font-size: 16px;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: inherit;
+  }
+
+  nav {
+    height: 75%;
+  }
+
+  nav a {
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* ~~~~~~~~~~ General Styling ~~~~~~~~~~ */
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  /* ~~~~~~~~~~ Main Content Styling ~~~~~~~~~~ */
+
+  .split {
+    display: block;
+    padding: 0;
+  }
+
+  .main {
+    width: auto;
+    margin: 0;
+  }
+
+  .sub {
+    padding: 0 16px;
+  }
+
+  /* ~~~~~~~~~~ Specific content Styling ~~~~~~~~~~ */
+
+
+  /* ~~~~~~~~~~ Header Styling ~~~~~~~~~~ */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  /* ~~~~~~~~~~ Intro Styling ~~~~~~~~~~ */
+
+  #intro .sub {
+    max-width: 100%;
+  }
+
+  #intro h1, #intro h2 {
+    padding: 1rem 0;
+  }
+
+  /* ~~~~~~~~~~ Details Styling ~~~~~~~~~~ */
+
+  .detail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail div {
+    padding: 16px;
+  }
+
+  .detail .img-holder {
+    width: 100%;
+    padding: 0;
+  }
+
+  .detail a {
+    margin-bottom: 16px;
+  }
+
+  #details .detail:last-child {
+    background-color: inherit;
+  }
+
+
+  /* ~~~~~~~~~~ Start Learning Styling ~~~~~~~~~~ */
+
+  .courses {
+    padding: 32px 16px;
+  }
+
+  .course {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #b7b7b7;
+    border-radius: 4px;
+  }
+
+  .course h2 {
+    font-weight: normal;
+  }
+
+  .course h3, .course img, .course p {
+    display: none;
+  }
+
+  .course:hover h3, .course:hover img, .course:hover p {
+    display: block;
+  }
+
+  .course:hover h2 {
+    font-weight: bold;
+  }
+
+  /* ~~~~~~~~~~ Exhibit Styling ~~~~~~~~~~ */
+
+  #exhibit h1 {
+    padding-bottom: 16px;
+  }
+
+  #exhibit {
+    padding-bottom: 24px;
+  }
+
+  /* ~~~~~~~~~~ Footer Styling ~~~~~~~~~~ */
+
+  footer {
+    height: auto;
+    margin: 32px 0;
+  }
+}

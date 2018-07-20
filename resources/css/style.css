@@ -6,6 +6,7 @@ html {
   color: #4A4A4A;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -109,16 +110,21 @@ button:active, button:active span::after {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .detail h2 {
-  padding: 0;
+  padding: 1rem 0;
 }
 
+.detail p {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
 .detail a {
   color: DodgerBlue;
   display: block;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .img-holder {
@@ -172,7 +178,7 @@ header {
   color: #4A4A4A;
 }
 
-#logo img {
+header img {
   height: 100%;
   width: auto;
 }
