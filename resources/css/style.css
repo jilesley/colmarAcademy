@@ -164,6 +164,14 @@ header {
   text-transform: uppercase;
 }
 
+#logo span {
+  color: darkGray;
+}
+
+#logo strong {
+  color: #4A4A4A;
+}
+
 #logo img {
   height: 100%;
   width: auto;
